@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;600;700&family=Open+Sans&display=swap');
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -8,6 +8,7 @@
     };
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 $text_bold: #202020;
@@ -259,9 +260,50 @@ h4 {
                     .development__card_title {
                         margin-bottom: 8px;
                     }
-                    .development__card_text {
-
-                    }
+                   
+                }
+            }
+        }
+    }
+}
+.technologies {
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 112px;
+    background-color: $background;
+    &__box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .technologies__title {
+            margin-bottom: 40px;
+        }
+        .technologies__cards {
+            display: flex;
+            align-items: flex-start;
+            &_card {
+                position: relative;
+                padding: 42px 42px 154px 42px;
+                background-color: $white;
+                height: 384px;
+                &:nth-of-type(2n) {
+                    margin: 0px 32px;
+                }
+                .technologies__card_title {
+                    margin-bottom: 16px;
+                    color:$text_bold;
+                }
+                .technologies__card_text {
+                    
+                    color:$text_regular;                  
+                    
+                    
+                }
+                .technologies__card_icon {
+                    position: absolute;
+                    bottom: 42px;
+                    right: 42px;
                 }
             }
         }

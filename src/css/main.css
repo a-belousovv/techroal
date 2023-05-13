@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;600;700&family=Open+Sans&display=swap");
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   font-family: "Bebas Neue", sans-serif;
   font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 * a {
   text-decoration: none;
@@ -258,4 +259,47 @@ h4 {
 }
 .development__box .development__cards_card .development__card_content .development__card_title {
   margin-bottom: 8px;
+}
+
+.technologies {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 112px;
+  background-color: #F7F8FC;
+}
+.technologies__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.technologies__box .technologies__title {
+  margin-bottom: 40px;
+}
+.technologies__box .technologies__cards {
+  display: flex;
+  align-items: flex-start;
+}
+.technologies__box .technologies__cards_card {
+  position: relative;
+  padding: 42px 42px 154px 42px;
+  background-color: #ffffff;
+  height: 384px;
+}
+.technologies__box .technologies__cards_card:nth-of-type(2n) {
+  margin: 0px 32px;
+}
+.technologies__box .technologies__cards_card .technologies__card_title {
+  margin-bottom: 16px;
+  color: #202020;
+}
+.technologies__box .technologies__cards_card .technologies__card_text {
+  color: #4A5056;
+}
+.technologies__box .technologies__cards_card .technologies__card_icon {
+  position: absolute;
+  bottom: 42px;
+  right: 42px;
 }/*# sourceMappingURL=main.css.map */
