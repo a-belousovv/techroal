@@ -93,7 +93,15 @@ h4 {
     width: calc(100% - 224px);
     margin: 0 auto;
 }
-
+.swiper {
+    width: 100%;
+    .swiper-button-prev::after {
+        font-size: 0px;
+    }
+    .swiper-button-next::after {
+        font-size: 0px;
+    }
+  }
 
 
 //CSS Styles
@@ -285,10 +293,13 @@ h4 {
             &_card {
                 position: relative;
                 padding: 42px 42px 154px 42px;
-                background-color: $white;
+                transition: 0.5s;
                 height: 384px;
                 &:nth-of-type(2n) {
                     margin: 0px 32px;
+                }
+                &:hover {
+                    background-color: $white;
                 }
                 .technologies__card_title {
                     margin-bottom: 16px;
@@ -305,6 +316,77 @@ h4 {
                     bottom: 42px;
                     right: 42px;
                 }
+            }
+        }
+    }
+}
+.steps {
+    width: 100%;
+    height: fit-content;
+    padding: 72px 0px 102px 0px;
+    &__box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .steps__header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            .slider__arrow {
+                display: flex;
+                align-items: center;
+                &-next {
+                    background-color: #F4F4F6 ;
+                    border-radius: 50%;
+                    padding: 12px;
+                    margin-left: 16px;
+                    transition: 0.5s;
+                    &:hover {
+                        background-color: $hover;
+                    }
+                }
+                &-prev {
+                    background-color: #F4F4F6 ;
+                    border-radius: 50%;
+                    padding: 12px;
+                    transition: 0.5s;
+                    &:hover {
+                        background-color: $hover;
+                    }
+                }
+            }
+        }
+        .swiper {
+            &-slide {
+                width: 328px;
+            }
+            &__number {
+                width: 60px;
+                height: 60px;
+                padding: 20px;
+                border-radius: 50%;
+                margin-bottom: 24px;
+                background-color: $accent1;
+                h4 {
+                    color:$white;
+                }
+                position: relative;
+                &::after {
+                    content:"";
+                    width: 420px;
+                    background-color: $accent1;
+                    height: 2px;
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    z-index: -1;
+                }
+            }
+            &__title {
+                margin-bottom: 16px;
             }
         }
     }
