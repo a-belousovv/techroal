@@ -256,6 +256,7 @@ h4 {
             flex-direction: column;
             align-items: flex-start;
             &_card {
+                
                 display: flex;
                 align-items: center;
                 width: 592px;
@@ -269,6 +270,7 @@ h4 {
                 &:hover {
                     background-color: $white;
                 }
+                
                 .development__card-icon {
                     width: 72px;
                     height: 72px;
@@ -278,6 +280,7 @@ h4 {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
+                    
                     .development__card_title {
                         margin-bottom: 8px;
                     }
@@ -457,7 +460,7 @@ h4 {
                     margin-left: 32px;
                
                     padding: 40px;
-                    background: url(/public/pictures/background/services-form-bg.png);
+                    background: url(/public/pictures/background/services-form-bg.png) center/cover no-repeat;
                     .services__form_title {
                         margin-bottom: 8px;
 
@@ -509,18 +512,26 @@ h4 {
             .development__card {
                 width: 592px;
                 display: flex;
-                align-items: center;
-                justify-content: space-between;
-                
+                flex-direction: column;
+                align-items: flex-start;
                 border-top: 2px solid $background;
                 padding: 16px 0px;
                 &:last-child {
                     border-bottom: 2px solid $background;
                 }
-                &_button {
-                    background-color: $background;
-                    padding: 12px;
-                    border-radius: 50%;
+               
+                .development__card_header {
+                    width: 592px;
+                    display: flex;
+                    align-items: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .development__card_button{
+                        background-color: $background;
+                        padding: 12px;
+                        border-radius: 50%;
+                    }
                 }
             }
         }
@@ -529,7 +540,7 @@ h4 {
 .trust {
     width: 100%;
     height: fit-content;
-    padding: 112px 0px;
+    padding-top: 112px;
     background-color: $background;
     &__box {
         width: 100%;
@@ -616,6 +627,138 @@ h4 {
                             }
 
                     }
+                }
+            }
+        }
+    }
+}
+.about {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    padding:112px 0px;
+    background-color: $background;
+  
+    &__box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .about__title {
+            margin-bottom:24px;
+        }
+        .about__text {
+            margin-bottom: 111px;
+            width: 536px;
+            font-family: IBM Plex Sans;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: 0em;
+            text-align: left;
+            
+        }
+        .about__cards {
+            display: flex;
+            align-items: flex-start;
+            position: relative;
+            z-index: 10;
+            .about__card {
+                width: 384px;
+                display: flex;
+                flex-direction: column;
+                padding: 40px;
+                position: relative;
+                transition: 0.5s;
+                margin-left: 32px;
+                &:hover {
+                    background-color: $white;
+                }
+                &:first-child {
+                    margin-left: 0px;
+                }
+              
+                &_title {
+                    margin-bottom: 16px;
+                }
+                &_text {
+                    margin-bottom: 50px;
+                }
+                &_number {
+                    position: absolute;
+                    bottom: 40px;
+                    right: 40px;
+                    color:$accent1;
+                }
+            }
+        }
+        .about__img-bg {
+            position: absolute;
+            top: 0%;
+            right: 0;
+            z-index: 1;
+        }
+        .about__specialists_card {
+            position: absolute;
+            top: 120px;
+            right: 331px;
+            z-index: 10;
+            width: 253px;
+            height: 150px;
+            padding-top: 39px;
+            padding-left: 20px;
+            
+            background: url(/public/pictures/background/about__specialists-bg.png) center/cover no-repeat;
+           
+        }
+    }
+}
+.contacts {
+    width: 100%;
+    height: fit-content;
+    &__box {
+        width: 100%;
+        background: url(/public/pictures/background/contacts-bg-image.png) center/cover no-repeat;
+        padding: 64px 273px 72px 72px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .contacts__text {
+            margin-bottom: 8px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+        .contacts__subtitle {
+            margin-bottom: 24px;
+        }
+    }
+}
+.footer {
+    width: 100%;
+    height: fit-content;
+    &__box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 24px;
+        .footer__content {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .footer__logo {
+                width: 237px;
+                height: 84px;
+                margin-right: 155px;
+            }
+            .footer__items {
+                display: flex;
+                align-items: center;
+                padding: 64px 0px;
+                &_item {
+                    margin-right: 48px;
                 }
             }
         }
