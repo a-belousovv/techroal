@@ -1,18 +1,51 @@
 window.addEventListener('DOMContentLoaded', () => {
-
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    slidesPerView: 3,
-    spaceBetween: 44,
-   
-    navigation: {
-      nextEl: '.slider__arrow-next',
-      prevEl: '.slider__arrow-prev',
-    },
-  
+  let width = document.documentElement.clientWidth;
+  console.log(width)
+  if (width <= 360) {
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      
+      spaceBetween: 44,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.slider__arrow-next',
+        prevEl: '.slider__arrow-prev',
+      },
     
-  });
+      
+    });
+  }
+  else if (width >= 361 && width <= 768) {
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      
+      spaceBetween: 44,
+      slidesPerView: 2,
+      navigation: {
+        nextEl: '.slider__arrow-next',
+        prevEl: '.slider__arrow-prev',
+      },
+    
+      
+    });
+  }
+  else {
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      
+      spaceBetween: 44,
+      slidesPerView: 3,
+      navigation: {
+        nextEl: '.slider__arrow-next',
+        prevEl: '.slider__arrow-prev',
+      },
+    
+      
+    });
+  }
   function DevelopmentMobileAccordion() {
     const parent = document.querySelector('.development-mobile');
     const cards = parent.querySelectorAll('.development__card');
