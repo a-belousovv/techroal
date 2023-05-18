@@ -1,0 +1,83 @@
+.development-sites {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 112px 0px;
+    background-color: #F7F8FC;
+  }
+  .development-sites .development__box {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  @media (max-width: 768px) {
+    .development-sites .development__box {
+      flex-direction: column;
+    }
+  }
+  .development-sites .development__box .development__content {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 104px;
+  }
+  @media (max-width: 768px) {
+    .development-sites .development__box .development__content {
+      width: 72%;
+    }
+  }
+  @media (max-width: 360px) {
+    .development-sites .development__box .development__content {
+      width: 100%;
+    }
+  }
+  .development-sites .development__box .development__content .development__title {
+    margin-bottom: 16px;
+  }
+  @media (max-width: 360px) {
+    .development-sites .development__box .development__content .development__title {
+      font-family: Bebas Neue;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }
+  .development-sites .development__box .development__content .development__subtitle {
+    margin-bottom: 28px;
+  }
+  .development-sites .development__box .development__content .development__button {
+    background-color: #FFE143;
+    padding: 13px 28px;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+  }
+  .development-sites .development__box .development__content .development__button:hover {
+    background-color: #CBE637;
+  }
+  @media (max-width: 768px) {
+    .development-sites .development__box .development__content .development__button {
+      margin-bottom: 40px;
+    }
+  }
+  @media (max-width: 360px) {
+    .development-sites .development__box .development__content .development__button {
+      padding: 13px 88px;
+    }
+  }
+  .development-sites .development__box .development__cards {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @media (max-width: 768px) {
+    .development-sites .development__box .development__cards {
+      width: 100%;
+    }
+  }

@@ -1,0 +1,17 @@
+.services__box .services__cards_card {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .services__box .services__cards_card:hover {
+    background-color: #ffffff;
+  }
+  .services__box .services__cards_card .services__card_img {
+    margin-right: 16px;
+  }
+  @media (max-width: 768px) {
+    .services__box .services__cards_card {
+      padding: 20px;
+    }
+  }

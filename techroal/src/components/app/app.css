@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;600;700&family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Bebas Neue", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Bebas Neue;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #202020;
+}
+
+h2 {
+  font-family: Bebas Neue;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #202020;
+}
+
+h3 {
+  font-family: Bebas Neue;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #202020;
+}
+
+h4 {
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #202020;
+}
+
+.text-bold {
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #202020;
+}
+
+.text-regular {
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #202020;
+}
+
+.caption {
+  font-family: IBM Plex Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #202020;
+}
+
+.container {
+  width: calc(100% - 224px);
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    width: 312px;
+  }
+}
+
+.swiper {
+  width: 100%;
+}
+.swiper .swiper-button-prev::after {
+  font-size: 0px;
+}
+.swiper .swiper-button-next::after {
+  font-size: 0px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,164 @@
+.nav {
+    width: 100%;
+    height: 128px;
+    border-bottom: 1px solid #E7E7EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+  }
+  @media (max-width: 768px) {
+    .nav {
+      overflow: hidden;
+      max-width: 768px;
+      height: 88px;
+    }
+  }
+  @media (max-width: 360px) {
+    .nav {
+      height: 64px;
+      max-width: 360px;
+    }
+  }
+  .nav__box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  @media (max-width: 768px) {
+    .nav__box {
+      justify-content: flex-start;
+      padding-left: 35px;
+    }
+  }
+  @media (max-width: 360px) {
+    .nav__box {
+      padding-left: 27px;
+    }
+  }
+  .nav__box .nav__logo {
+    width: 237px;
+    height: 64px;
+    margin-left: 112px;
+  }
+  @media (max-width: 768px) {
+    .nav__box .nav__logo {
+      margin-right: 171px;
+      margin-left: 35px;
+    }
+  }
+  @media (max-width: 360px) {
+    .nav__box .nav__logo {
+      width: 121px;
+      height: 32px;
+      margin-left: 27px;
+      margin-right: 34px;
+    }
+  }
+  .nav__box .nav__items {
+    display: flex;
+    align-items: center;
+    margin-right: 110px;
+    margin-left: 155px;
+  }
+  .nav__box .nav__items_item {
+    margin-right: 46px;
+    color:#4A5056;;
+  }
+  .nav__box .nav__items_item:last-child {
+    margin-right: 0px;
+  }
+  @media (max-width: 768px) {
+    .nav__box .nav__items {
+      display: none;
+    }
+  }
+  .nav__box .nav__contact-button {
+    background-color: #FFE143;
+    border: none;
+    outline: none;
+    padding: 54px 112px;
+    transition: 0.5s;
+  }
+  .nav__box .nav__contact-button:hover {
+    background-color: #CBE637;
+  }
+  @media (max-width: 768px) {
+    .nav__box .nav__contact-button {
+      padding: 34px 49px;
+      color: #202020;
+      font-family: IBM Plex Sans;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+  @media (max-width: 360px) {
+    .nav__box .nav__contact-button {
+      padding: 16px 22px;
+    }
+    .nav__box .nav__contact-button h4 {
+      width: 81px;
+      font-family: IBM Plex Sans;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+  .nav__box .nav__burger_content {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .nav__box .nav__burger_box {
+      position: relative;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav__box .nav__burger_box .nav__burger_line-top {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      border-radius: 30px;
+      margin-bottom: 2px;
+      position: relative;
+    }
+    .nav__box .nav__burger_box .nav__burger_line-top::before {
+      content: "";
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      position: absolute;
+      border-radius: 30px;
+      top: -5px;
+      left: 0;
+    }
+    .nav__box .nav__burger_box .nav__burger_line-bottom {
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      border-radius: 30px;
+    }
+    .nav__box .nav__burger_box .nav__burger_line-bottom::after {
+      content: "";
+      width: 25px;
+      height: 3px;
+      background-color: black;
+      position: absolute;
+      border-radius: 30px;
+      bottom: 3px;
+      left: 0;
+    }
+  }

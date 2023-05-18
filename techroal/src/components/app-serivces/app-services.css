@@ -1,0 +1,126 @@
+.services {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 112px 0px;
+    background-color: #F7F8FC;
+  }
+  @media (max-width: 360px) {
+    .services {
+      padding: 72px 0px;
+      max-width: 360px;
+    }
+  }
+  @media (max-width: 768px) {
+    .services {
+      max-width: 768px;
+    }
+  }
+  .services__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .services__box .services__title {
+    margin-bottom: 40px;
+  }
+  .services__box .services__cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .services__box .services__cards_card {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+  }
+  .services__box .services__cards_card:hover {
+    background-color: #ffffff;
+  }
+  .services__box .services__cards_card .services__card_img {
+    margin-right: 16px;
+  }
+  @media (max-width: 768px) {
+    .services__box .services__cards_card {
+      padding: 20px;
+    }
+  }
+  .services__box .services__cards_top {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(3, 380px);
+    grid-template-rows: repeat(2, 104px);
+    margin-bottom: 32px;
+  }
+  @media (max-width: 768px) {
+    .services__box .services__cards_top {
+      grid-template-columns: repeat(2, 348px);
+      grid-template-rows: repeat(3, 104px);
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  @media (max-width: 360px) {
+    .services__box .services__cards_top {
+      grid-template-columns: repeat(1, 312px);
+      grid-template-rows: repeat(6, 88px);
+    }
+  }
+  .services__box .services__cards_bottom {
+    display: flex;
+    align-items: flex-start;
+  }
+  @media (max-width: 768px) {
+    .services__box .services__cards_bottom {
+      flex-direction: column;
+    }
+  }
+  .services__box .services__cards_bottom-left {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(2, 384px);
+    grid-template-rows: repeat(2, 104px);
+  }
+  @media (max-width: 768px) {
+    .services__box .services__cards_bottom-left {
+      grid-template-columns: repeat(2, 348px);
+      grid-template-rows: repeat(2, 104px);
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  @media (max-width: 360px) {
+    .services__box .services__cards_bottom-left {
+      grid-template-columns: repeat(1, 312px);
+      grid-template-rows: repeat(4, 88px);
+    }
+  }
+  .services__box .services__cards_bottom .services__cards_form {
+    width: 40%;
+    height: 240px;
+    margin-left: 32px;
+    padding: 40px;
+    background: url(/public/pictures/background/services-form-bg.png) center/cover no-repeat;
+  }
+  @media (max-width: 768px) {
+    .services__box .services__cards_bottom .services__cards_form {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: 360px) {
+    .services__box .services__cards_bottom .services__cards_form {
+      width: 100%;
+      padding: 24px;
+    }
+  }
+  .services__box .services__cards_bottom .services__cards_form .services__form_title {
+    margin-bottom: 8px;
+  }
+  .services__box .services__cards_bottom .services__cards_form .services__form_text {
+    margin-bottom: 4px;
+  }

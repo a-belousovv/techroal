@@ -1,0 +1,56 @@
+.technologies__box .technologies__cards_card {
+    position: relative;
+    padding: 42px 42px 154px 42px;
+    transition: 0.5s;
+    height: 384px;
+  }
+  @media (max-width: 768px) {
+    .technologies__box .technologies__cards_card {
+      padding: 24px 24px 134px 24px;
+      height: -webkit-fit-content;
+      height: -moz-fit-content;
+      height: fit-content;
+    }
+    .technologies__box .technologies__cards_card:last-child {
+      padding: 24px 24px 156px 24px;
+    }
+  }
+  @media (max-width: 360px) {
+    .technologies__box .technologies__cards_card {
+      padding: 24px 24px 84px 24px;
+    }
+    .technologies__box .technologies__cards_card:last-child {
+      padding: 24px 24px 96px 24px;
+    }
+  }
+  .technologies__box .technologies__cards_card:nth-of-type(2n) {
+    margin: 0px 32px;
+  }
+  @media (max-width: 768px) {
+    .technologies__box .technologies__cards_card:nth-of-type(2n) {
+      margin: 0px 0px;
+    }
+  }
+  .technologies__box .technologies__cards_card:hover {
+    background-color: #ffffff;
+  }
+  .technologies__box .technologies__cards_card .technologies__card_title {
+    margin-bottom: 16px;
+    color: #202020;
+  }
+  .technologies__box .technologies__cards_card .technologies__card_text {
+    color: #4A5056;
+  }
+  .technologies__box .technologies__cards_card .technologies__card_icon {
+    position: absolute;
+    bottom: 42px;
+    right: 42px;
+  }
+  @media (max-width: 360px) {
+    .technologies__box .technologies__cards_card .technologies__card_icon {
+      width: 42px;
+      height: 42px;
+      bottom: 25px;
+      height: 25px;
+    }
+  }
