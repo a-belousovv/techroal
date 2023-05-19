@@ -23,7 +23,7 @@ const data = {
 
 function AppTechnologies() {
     return (
-        <section className="technologies">
+        <section className="technologies" id='technologies'>
         <div className="container">
             <div className="technologies__box">
                 <h2 className="technologies__title">Технологии</h2>

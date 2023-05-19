@@ -6,6 +6,10 @@ import AppTechnologies from '../app-technologies/app-technologies';
 import AppSteps from '../app-steps/app-steps';
 import AppServices from '../app-serivces/app-services';
 import AppDevelopmentMobile from "../app-development-mobile/app-development-mobile";
+import AppTrust from '../app-trust/app-trust';
+import AppAbout from '../app-about/app-about';
+import AppContact from '../app-contact/app-contact';
+import AppFooter from '../app-footer/app-footer';
 function App() {
     return (
         <div className="app">
@@ -17,6 +21,10 @@ function App() {
                 <AppSteps/>
                 <AppServices/>
                 <AppDevelopmentMobile/>
+                <AppTrust/>
+                <AppAbout/>
+                <AppContact/>
+                <AppFooter/>
             </main>
         </div>
     )

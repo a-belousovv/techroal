@@ -3,7 +3,9 @@
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    padding: 112px 0px;
+
+    padding-top:130px;
+    padding-bottom:112px;
     background-color: #F7F8FC;
   }
   .development-sites .development__box {

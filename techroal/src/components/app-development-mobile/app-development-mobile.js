@@ -64,13 +64,13 @@ function AppDevelopmentMobile() {
         },
     }
     return (
-        <section className="development-mobile" onClick={DevelopmentMobileAccordion}>
+        <section className="development-mobile" onClick={DevelopmentMobileAccordion} id="development-mobile">
             <div className="container">
                 <div className="development__box">
                     <div className="development__content">
                         <h2 className="development__title">Разработка мобильных <br/> приложений</h2>
                         <p className="development__subtitle text-regular">Мы разрабатываем мобильные приложения под любые нужды на кроссплатформенном фреймворке — React Native. На нем написаны такие мировые гиганты, как Instagram, UberEats, Facebook Ads, Airbnb и многие другие. Мы можем воплотить в реальность абсолютно любую вашу идею.</p>
-                        <button className="development__button text-bold">Связаться с нами</button>
+                        <a href='#contact' className="development__button text-bold">Связаться с нами</a>
                     </div>
                     <div className="development__cards">
                         <AppDevelopmentMobileCard title={data.card1.title} textHide={data.card1.textHide}/>

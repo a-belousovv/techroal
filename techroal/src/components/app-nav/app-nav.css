@@ -114,8 +114,78 @@
       text-align: center;
     }
   }
-  .nav__box .nav__burger_content {
-    display: none;
+  .nav__box .nav__burger {
+    backdrop-filter: blur(10px);
+    position:fixed;
+    bottom:0;
+    right:0;
+    z-index:100;
+    width:0%;
+    height:0%;
+    transition:0.5s;
+   
+  }
+  .nav__button-close {
+    position:absolute;
+    top:-30px;
+    left:-50px;
+  }
+  .nav__burger_content {
+      position:absolute;
+      right:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:space-between;
+      width:360px;
+      height:100%;
+      background-color:white;
+      padding:46px 62px;
+  }
+  .nav__burger_content-top {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+    
+  }
+  .nav__logo-burger {
+    width:237px;
+    height:64px;
+  }
+  .nav__items-burger {
+    margin-top:48px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .nav__items_item-burger {
+    color:black;
+    font-family: Bebas Neue;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom:16px;
+    color:#4A5056;
+
+  }
+  .nav__contact-burger {
+    display:flex;
+    flex-direction:column;
+    align-item:center;
+  }
+  .nav__contact-burger .text-regular {
+    text-align:center;
+  }
+  .nav__contact-burger .text-bold {
+    text-align:center;
+    margin-bottom:16px;
+  }
+  .nav__contact-burger h4 {
+    text-align:center;
+    margin-top:4px;
   }
   @media (max-width: 768px) {
     .nav__box .nav__burger_box {

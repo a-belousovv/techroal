@@ -120,7 +120,7 @@ function AppStepsSlider() {
             <h4 className="swiper__title">Запуск сайта</h4>
             <p className="swiper__text">Переносим проект на хостинг и присваиваем ему доменное имя. Выполняем все оговоренные в ТЗ дополнительные услуги.</p>
         </SwiperSlide>
-        
+        <AppStepsSliderButtons/>
         </Swiper> :<Swiper
         spaceBetween={50}
         slidesPerView={3}

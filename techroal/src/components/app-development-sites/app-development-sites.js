@@ -27,13 +27,13 @@ const data = {
 
 function AppDevelopmentSites() {
     return (
-        <section className="development-sites">
+        <section className="development-sites" id='development-sites'>
             <div className="container">
                 <div className="development__box">
                     <div className="development__content">
                         <h2 className="development__title">Разработка сайтов</h2>
                         <p className="development__subtitle text-regular">Создаем эффективный инструмент для презентации вашей компании в сети и привлечения новых клиентов. Разрабатываем сайты с уникальным дизайном и наполняем их всем необходимыми модулями и функционалом.</p>
-                        <button className="development__button text-bold">Связаться с нами</button>
+                        <a href='#contact' className="development__button text-bold">Связаться с нами</a>
                     </div>
                     <div className="development__cards">
                     <AppDevelopmentSitesCard url={data.firstCard.url} title ={data.firstCard.title} text={data.firstCard.text}/>
